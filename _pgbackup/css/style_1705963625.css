@@ -1,0 +1,41 @@
+.logo-pali {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+body {
+    background-color: #000000;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.Pali-para {
+    color: #000000;
+}
+
+.pali-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+}
+
+.pali-checker {
+}
