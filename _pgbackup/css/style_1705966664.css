@@ -4,8 +4,6 @@
     align-items: center;
     justify-content: center;
     align-content: center;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
 }
 
 h1 {
@@ -41,8 +39,4 @@ p {
 }
 
 .pali-checker {
-}
-
-.pali-check {
-    display: none;
 }
