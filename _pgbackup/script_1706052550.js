@@ -12,6 +12,5 @@ function invalidInput (palindromeTextInput) {
     } else {
         return;
     }
+    
 }
-
-palindromeChecker.addEventListener("click", invalidInput);
