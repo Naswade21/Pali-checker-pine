@@ -6,8 +6,12 @@ let isError = false;
 
 // pseudocode for step 4--- If the user doesn't input anything into the text-input when Palindrome check button is clicked then send an alert that says Please input a value(can write something funny)
 
-palindromeChecker.addEventListener('click', () => {
-    if (palindromeTextInput.value === '') {
-        return alert('Please Input a damn value please! I do not have all DAYY')
+function invalidInput (palindromeTextInput) {
+    if (palindromeTextInput === null){
+        alert('Please input some damn text please!');
+    } else {
+        return;
     }
-});
+}
+
+palindromeChecker.addEventListener("click", invalidInput);
