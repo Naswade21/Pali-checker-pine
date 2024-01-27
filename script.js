@@ -1,13 +1,25 @@
 const palindromeChecker = document.getElementById('check-btn');
 const palindromeResult = document.getElementById('#result');
-const output = document.getElementById('output');
 const palindromeTextInput = document.getElementById('text-input');
 let isError = false;
 
-// pseudocode for step 4--- If the user doesn't input anything into the text-input when Palindrome check button is clicked then send an alert that says Please input a value(can write something funny)
+const isPalindrome = (str) => {
+    const cleanStr = str.toLowerCase().replace(/[^a-zA-Z0-9]/g, ''); //Makes words all lowercase then replaces non-alphanumeric characters(^) with the string the user types
+    let reverseStr = cleanStr.split().reverse().join(); //Take your cleaned input and split individually, reverse the words and join them back together to see if its similar backwards and forwards
 
-palindromeChecker.addEventListener('click', () => {
-    if (palindromeTextInput.value === '') {
-        return alert('Please Input a damn value please! I do not have all DAYY')
+    return cleanStr === reverseStr; //Checks if forward string and backward string are equal
+}
+
+const checkPalindrome = () => {
+    
+    const check = palindromeTextInput.value(isPalindrome);
+
+    if (check === true) {
+        palindromeResult.innerHTML(`<p>${check} is true</p>`);
+    } else {
+        palindromeResult.innerHTML(`<p>${check} is false</p>`)
     }
-});
+}
+
+palindromeChecker.addEventListener('click', checkPalindrome);
+
