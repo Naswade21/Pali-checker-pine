@@ -10,23 +10,5 @@ const isPalindrome = (str) => {
     return cleanStr === reverseStr; //Checks if forward string and backward string are equal
 }
 
-function paliCheck () {
-    let pChecker = palindromeTextInput.value
-   let check = isPalindrome(pChecker);
-    
-    if (check === true) {
-        pChecker + ' is a palindrome!'
-    } else {
-        pChecker + ' is not a palindrome!'
-    }
-}
 
-function resultPalindrome(num) {
-    if (palindromeTextInput.value === '') {
-        return alert('Please Input value')
-    } else {
-        return alert('insert function here')
-    }
-}
 
-palindromeChecker.addEventListener('click', paliCheck)

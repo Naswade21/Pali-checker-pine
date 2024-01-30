@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <meta name="description" content=""> 
+        <meta name="author" content=""> 
+        <title>Nas' Palindrome Checker'</title>         
+        <link href="css/normalize.css" rel="stylesheet"> 
+        <link href="css/style.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    </head>     
+    <body>
+        <header class="Nas-Bird">
+            <div class="logo-pali">
+                <img src="Group%203.svg" class="header-image">
+            </div>
+        </header>
+        <main class="pali-main">
+            <section class="pali-header">
+                <div class="pali-content" style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                    <h1>Palindrome Checker</h1>
+                </div>
+            </section>
+            <section class="pali-box">
+                <div class="pali-checker" style="display: flex; flex-direction: column; justify-content: center; background-color: #ffffff; width: 50%; height: 100%; border-radius: 26px; align-items: center;">
+                    <p class="Pali-para">Enter in text to check for a Palindrome:</p>
+                    <div class="input-container">
+                        <input type="text" id="text-input">
+                        <button id="check-btn" class="pali-button" style="margin-left: 1rem;">Submit</button>
+                    </div>
+                    <div class="expand input-container" style="align-content: center; flex-basis: 19px; flex-grow: -15;" id="result">
+</div>
+                </div>
+            </section>
+            <section class="pali-box">
+                <div id="result" class="color-div pali-checker" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #00471b; width: 50%; height: 100%; border-radius: 26px; padding-left: 1.5rem; padding-right: 1.5rem;">
+                    <p class="Pali-para white-text" style="color: #ffffff; text-align: left;">💡 A palindrome is a word or sentence that&apos;s spelled the same way both forward and backward, ignoring
+                    punctuation, case, and spacing.</p>
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>     
+</html>

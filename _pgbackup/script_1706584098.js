@@ -11,14 +11,7 @@ const isPalindrome = (str) => {
 }
 
 function paliCheck () {
-    let pChecker = palindromeTextInput.value
-   let check = isPalindrome(pChecker);
     
-    if (check === true) {
-        pChecker + ' is a palindrome!'
-    } else {
-        pChecker + ' is not a palindrome!'
-    }
 }
 
 function resultPalindrome(num) {
@@ -29,4 +22,3 @@ function resultPalindrome(num) {
     }
 }
 
-palindromeChecker.addEventListener('click', paliCheck)
