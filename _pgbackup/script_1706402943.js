@@ -10,18 +10,13 @@ const isPalindrome = (str) => {
     return cleanStr === reverseStr; //Checks if forward string and backward string are equal
 }
 
-const addInnerText = () => {
-    const newText = `<p></p>`
-    palindromeResult.innerHTML = newText;
-}
-
 const checkPalindrome = () => {
     
     const check = palindromeTextInput.value;
 
    const isPali = isPalindrome(check);
 
-    addInnerText = isPali ? check + ' is a palindrome' : check + ' is not a palindrome';
+   palindromeResult.textContent = isPali ? check + ' is a palindrome' : check + ' is not a palindrome';
 }
 
 palindromeChecker.addEventListener('click', checkPalindrome);
