@@ -16,7 +16,7 @@ function paliCheck () {
 
     const checker = check ? `<p>${pChecker} is a palindrome!</p>` : `<p>${pChecker} is not a palindrome!</p>`
 
-    palindromeResult.insertAdjacentHTML('beforeend', checker);
+    palindromeResult.insertAdjacentElement('beforeend', checker);
 
     if (pChecker === '') {
         return alert('Please input a value')
