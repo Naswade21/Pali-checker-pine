@@ -11,7 +11,17 @@ const isPalindrome = (str) => {
 }
 
 function paliCheck () {
-     palindromeResult
+    let pChecker = palindromeTextInput.value;
+    let check = isPalindrome(pChecker);
+
+    const checker = check ? `<p>${pChecker} is a palindrome!</p>` : `<p>${pChecker} is not a palindrome!</p>`
+
+    palindromeResult.textContent += checker
+
+    if (pChecker === '') {
+        return alert('Please input a value')
+    }
+     
 }
 
 palindromeChecker.addEventListener('click', paliCheck);

@@ -25,17 +25,23 @@
                 </div>
             </section>
             <section class="pali-box">
-                <div id="result" class="pali-checker" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
-                    <p>Enter in text to check for a Palindrome:</p>
-                    <input type="text" id="text-input">
-                    <button id="check-btn" class="pali-button">Submit</button>
+                <div class="pali-checker" style="display: flex; flex-direction: column; justify-content: center; background-color: #ffffff; width: 50%; height: 100%; border-radius: 26px; align-items: center;">
+                    <p class="Pali-para">Enter in text to check for a Palindrome:</p>
+                    <div class="input-container">
+                        <input type="text" id="text-input">
+                        <button id="check-btn" class="pali-button" style="margin-left: 1rem;">Submit</button>
+                    </div>
+                    <div class="expand input-container" style="align-content: center; flex-basis: 19px; flex-grow: -15;" id="result">
+</div>
                 </div>
             </section>
-            <section class="pali-explain">
-                <div class="pali-textbox">
-                    <p>💡 A palindrome is a word or sentence that&apos;s spelled the same way both forward and backward, ignoring punctuation, case, and spacing.</p>
+            <section class="pali-box">
+                <div id="result" class="color-div pali-checker" style="display: flex; flex-direction: column; align-items: center; justify-content: center; background-color: #00471b; width: 50%; height: 100%; border-radius: 26px; padding-left: 1.5rem; padding-right: 1.5rem;">
+                    <p class="Pali-para white-text" style="color: #ffffff; text-align: left;">💡 A palindrome is a word or sentence that&apos;s spelled the same way both forward and backward, ignoring
+                    punctuation, case, and spacing.</p>
                 </div>
             </section>
         </main>
+        <script src="script.js"></script>
     </body>     
 </html>
