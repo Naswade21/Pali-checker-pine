@@ -11,7 +11,8 @@ const isPalindrome = (str) => {
 }
 
 function paliCheck () {
-     palindromeResult
+    const checkText = isPalindrome(palindromeTextInput.value);
+    palindromeResult.textContent = `${checkText}`
 }
 
 palindromeChecker.addEventListener('click', paliCheck);
